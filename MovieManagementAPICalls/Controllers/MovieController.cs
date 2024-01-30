@@ -13,7 +13,7 @@ namespace MovieManagementAPICalls.Controllers
         public IActionResult GetMovies()
         {
             var data = new List<Movie>();
-            string jsonContent = System.IO.File.ReadAllText("C:\\Users\\lbvik\\source\\repos\\MovieManagementAPICalls\\MovieManagementAPICalls\\Storage\\movies.json");
+            string jsonContent = System.IO.File.ReadAllText("Storage\\movies.json");
             return new ContentResult
             {
                 Content = jsonContent,
@@ -27,7 +27,7 @@ namespace MovieManagementAPICalls.Controllers
         {
             if (AddNewMovie == null || IsDefaultMovie(AddNewMovie))
             {
-                return BadRequest("Invalid movie data");
+                return BadRequest("Invalid Movie Data");
             }
 
             List<Movie> movies = LoadMovies();
@@ -51,7 +51,7 @@ namespace MovieManagementAPICalls.Controllers
             List<Movie> Loadedmovies;
             try
             {
-                string jsonData = System.IO.File.ReadAllText("C:\\Users\\lbvik\\source\\repos\\MovieManagementAPICalls\\MovieManagementAPICalls\\Storage\\movies.json");
+                string jsonData = System.IO.File.ReadAllText("Storage\\movies.json");
 
                 if (!string.IsNullOrEmpty(jsonData))
                 {
@@ -127,7 +127,7 @@ namespace MovieManagementAPICalls.Controllers
             }
             else
             {
-                return NotFound("Movie not found");
+                return NotFound("Movie Not Found");
             }
         }
 
