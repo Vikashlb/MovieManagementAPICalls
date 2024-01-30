@@ -1,0 +1,20 @@
+[
+  {
+    "MovieTitle": "Black Panther: Wakanda Forever",
+    "MovieDirector": " Ryan Coogler",
+    "MovieCategory": "Action",
+    "MovieReleaseYear": 2022
+  },
+  {
+    "MovieTitle": "Life of Pi",
+    "MovieDirector": "Ang Lee",
+    "MovieCategory": "Adventure",
+    "MovieReleaseYear": 2012
+  },
+  {
+    "MovieTitle": "La La Land",
+    "MovieDirector": "Damien Chazelle",
+    "MovieCategory": "Romance",
+    "MovieReleaseYear": 2016
+  }
+]
